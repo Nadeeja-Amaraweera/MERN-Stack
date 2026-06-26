@@ -17,7 +17,7 @@ app.put("/", (req,res)=>{
 
 app.delete("/", (req,res)=>{
     console.log("Delete request received at /");
-});
+}); 
 
 app.listen(3000, ()=>{
     console.log("Server is running on port 3000");

@@ -13,5 +13,13 @@
   "dependencies": {
     "express": "^5.2.1",
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git+https://github.com/Nadeeja-Amaraweera/MERN-Stack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nadeeja-Amaraweera/MERN-Stack/issues"
+  },
+  "homepage": "https://github.com/Nadeeja-Amaraweera/MERN-Stack#readme"
 }
