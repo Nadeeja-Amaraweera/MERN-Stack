@@ -4,22 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadeeja-Amaraweera/MERN-Stack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14"
-  },
-  "repository": { 
-    "type": "git",
-    "url": "git+https://github.com/Nadeeja-Amaraweera/MERN-Stack.git"
-  },
   "bugs": {
     "url": "https://github.com/Nadeeja-Amaraweera/MERN-Stack/issues"
   },
-  "homepage": "https://github.com/Nadeeja-Amaraweera/MERN-Stack#readme"
+  "homepage": "https://github.com/Nadeeja-Amaraweera/MERN-Stack#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
 }
