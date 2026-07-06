@@ -3,7 +3,8 @@ import mongoose from "mongoose";
 
 const app = express();
 
-let mongo_URI = "mongodb+srv://admin:1234@cluster0.9kpoisv.mongodb.net/?appName=Cluster0";
+const mongo_URI = "mongodb+srv://admin:1234@cluster0.9kpoisv.mongodb.net/?appName=Cluster0";
+
 mongoose.connect(mongo_URI).then(
     () => {
         console.log("MongoDB Connected Successfully!");
@@ -27,7 +28,7 @@ app.post("/", (req, res) => {
         message: "Post Request Received!",
         data: req.body
     });
-});
+}); 
 
 app.put("/", (req, res) => {
     res.json({
