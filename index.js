@@ -1,24 +1,46 @@
 import express from "express";
+import mongoose from "mongoose";
 
 const app = express();
+
+let mongo_URI = "mongodb+srv://admin:1234@cluster0.9kpoisv.mongodb.net/?appName=Cluster0";
+mongoose.connect(mongo_URI).then(
+    () => {
+        console.log("MongoDB Connected Successfully!");
+    },
+    (err) => {
+        console.log("MongoDB Connection Failed!", err);
+    }
+)
 
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Get Request Received!");
+    res.json({
+        message: "Get Request Received!"
+    });
 });
 
 app.post("/", (req, res) => {
     console.log(req.body);
-    res.send("Post Request Received!");
+    res.json({
+        message: "Post Request Received!",
+        data: req.body
+    });
 });
 
 app.put("/", (req, res) => {
-    res.send("Put Request Received!");
+    res.json({
+        message: "Put Request Received!",
+        data: req.body
+    });
 });
 
 app.delete("/", (req, res) => {
-    res.send("Delete Request Received!");
+    res.json({
+        message: "Delete Request Received!",
+        data: req.body
+    });
 });
 
 app.listen(3000, () => {
